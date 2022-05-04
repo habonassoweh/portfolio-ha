@@ -1,3 +1,4 @@
+import "./style.scss"
 import React from 'react'
 
 //export as a class not default, because it will be imported inside the index.jsx

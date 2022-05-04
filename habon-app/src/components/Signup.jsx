@@ -7,7 +7,7 @@ export class Signup extends React.Component {
   }
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container" ref={this.props.contarinerRef}>
         <div className="header">Sign Up</div>
         <div className="content">
           <div className="form">
