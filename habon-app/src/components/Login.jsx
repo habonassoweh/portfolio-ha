@@ -7,7 +7,7 @@ export class Login extends React.Component {
         super(props);
     }
 render(){
-return <div className='main-container'>
+return <div className='main-container' ref={this.props.containerRef}>
     <div className='header'>Login</div>
     <div className='content'>
         <div className='form'>

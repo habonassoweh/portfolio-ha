@@ -1,4 +1,3 @@
-import { is } from "express/lib/request";
 import React from "react"
 import "./App.scss";
 
@@ -27,7 +26,7 @@ class App extends React.Component{
       <div className="App">
         <div className="login">
           <div className="container">
-             {isLogginActive && (<Login containerRef ={ref => this.current = ref )}/>}
+             {isLogginActive && <Login containerRef ={ref => this.current = ref }/>}
              {!isLogginActive && <Signup containerRef ={ref => this.current = ref} />}
           </div>
           <RightSide current={current} containerRef ={ref => this.rightSide = ref} onClick={this.changeStat.bin(this)}/>
